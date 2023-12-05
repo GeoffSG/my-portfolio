@@ -8,17 +8,13 @@ $base-font-bolder: 800;
 $base-spacing: 2rem;
 $base-margin: 1rem;
 
+
 //  Colors
-$white: #f9f9f9;
+$white: #edf8ff;
 $grey: #696969;
 $dark-grey: #313131;
 
 $gold: #CEAA24;
+$gold-l: #E6D55E;
 
-$color-themes: (
-    'dark': (
-        'bg': $dark-grey,
-        'fg': $white
-    )
-);
-
+$border-gold: $gold solid 2px;

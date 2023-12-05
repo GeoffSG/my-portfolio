@@ -1,8 +1,6 @@
 .container {
     margin-bottom: auto;
-    height: 100vh;
-
-    @include theme-primary;
+    min-height: 100vh;
 
     @include mq('md'){
         display: flex;
@@ -14,4 +12,5 @@
     .section {
         padding: $base-spacing;
     }
+
 }

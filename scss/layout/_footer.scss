@@ -28,8 +28,6 @@ footer {
         font-size: 11px; 
         text-align: center;
 
-        @include theme-dark();
-
         a {
             color: $white;
             text-decoration: none;

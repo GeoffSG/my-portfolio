@@ -1,6 +1,4 @@
 header {
-    position: relative;
-
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -9,13 +7,11 @@ header {
 
     box-shadow: inset 0 0 50px black;
 
-    @include theme-primary;
-
     h1 {
         text-align: center;
         color: $white;
         margin: 0;
-        text-shadow: 0 0 1rem black ;
+        text-shadow: 0 0 1rem black;
         small {
             font-family: $font-content;
         }
@@ -23,18 +19,16 @@ header {
     .cover {
         background-image: url("../img/map.jpg");
         background-position: center;
-        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        align-self: stretch;
     
         padding: $base-spacing;
         
         border-bottom-left-radius: $base-spacing;
         border-bottom-right-radius: $base-spacing;
     
-        border: $gold solid 2px;
+        border: $border-gold;
 
         img {
             width: 192px;
