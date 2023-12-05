@@ -1,0 +1,15 @@
+.card {
+    padding: $base-spacing calc($base-spacing/2);
+
+    border: $border-gold;
+    border-radius: $base-spacing;
+
+    box-shadow: inset 0px 0px $base-spacing $blue-d;
+
+    h2 {
+        text-align: center;
+        padding-bottom: calc($base-spacing/2);
+    }
+
+
+}
