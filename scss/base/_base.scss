@@ -5,6 +5,7 @@
 html {
     font-size: $base-font-size;
     font-family: $base-font-family, sans-serif;
+    scroll-snap-type: y mandatory;
 }
 
 img {
@@ -15,4 +16,11 @@ img {
 h1, h2, h3 {
     font-family: $font-heading;
     margin: 0;
+}
+
+body {
+    header,
+    main .section {
+        scroll-snap-align: start end;
+    }
 }

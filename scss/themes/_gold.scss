@@ -1,8 +1,11 @@
 .theme-gold {
     $background: $gold;
-    $foreground: $white;
+    $foreground: $blue-d;
     background-color: $background;
     color: $foreground;
+}
+
+a.theme-gold {
     &:hover {
         background-color: $gold-l;
     }
