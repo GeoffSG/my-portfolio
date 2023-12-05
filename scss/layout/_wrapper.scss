@@ -1,0 +1,10 @@
+.wrapper {
+    
+    height: 100vh;
+    background-color: $white;
+
+
+    @include mq('md') {
+        justify-content: space-between;
+    }
+}

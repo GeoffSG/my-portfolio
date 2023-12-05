@@ -1,0 +1,17 @@
+.container {
+    margin-bottom: auto;
+    height: 100vh;
+
+    @include theme-primary;
+
+    @include mq('md'){
+        display: flex;
+        margin: auto;
+        
+        border-radius: $base-spacing;
+        box-shadow: 1em 1em 4em 2em rgba(0, 0, 0, 0.25);
+    }
+    .section {
+        padding: $base-spacing;
+    }
+}

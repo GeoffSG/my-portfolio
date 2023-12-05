@@ -1,0 +1,50 @@
+header {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: inset 0 0 50px black;
+
+    @include theme-primary;
+
+    h1 {
+        text-align: center;
+        color: $white;
+        margin: 0;
+        text-shadow: 0 0 1rem black ;
+        small {
+            font-family: $font-content;
+        }
+    }
+    .cover {
+        background-image: url("../img/map.jpg");
+        background-position: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
+    
+        padding: $base-spacing;
+        
+        border-bottom-left-radius: $base-spacing;
+        border-bottom-right-radius: $base-spacing;
+    
+        border: $gold solid 2px;
+
+        img {
+            width: 192px;
+            height: auto;
+            margin-bottom: calc($base-spacing/2);
+        }
+
+    }
+
+    .content {
+        padding: $base-spacing;
+    }
+}

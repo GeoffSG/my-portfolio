@@ -1,0 +1,38 @@
+//  Breakpoints
+$breakpoints: (
+    'sm': 320px,
+    'md': 768px,
+    'lg': 990px,
+    'xl': 1200px
+);
+
+@function get-breakpoint($bkpt) {
+    @return map-get($breakpoints, $bkpt);
+}
+
+@mixin mq($break) {
+
+	@if $break == "sm" {
+		@media (min-width: get-breakpoint($break)) and (max-width: (get-breakpoint('md'))) {
+			@content;
+		}
+    }
+	@else if $break == "md" {
+		@media (min-width: (get-breakpoint($break))) {
+			@content;
+		}
+	}
+	@else if $break == "lg" {
+		@media (min-width: (get-breakpoint($break))) {
+			@content;
+		}
+	}
+	@else if $break == "xl" {
+		@media (min-width: (get-breakpoint($break))) {
+			@content;
+		}
+	}
+	@else {
+		@error "ERROR: No valid value for `#{$break}`!";
+	}
+}

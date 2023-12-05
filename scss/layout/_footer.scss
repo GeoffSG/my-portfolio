@@ -1,0 +1,44 @@
+footer {
+    display: flex;
+
+    //  Center content
+    justify-content: center;
+    align-items: center;
+
+    //  Set the min-height
+    height:100vh;
+    min-height: 70px;
+
+    background-color: $grey;
+
+    font-family: $base-font-family;
+    text-align: center;
+
+    color: $white;
+
+    .attribution {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+
+        width: 100%;
+        height: 70px;
+
+        font-size: 11px; 
+        text-align: center;
+
+        @include theme-dark();
+
+        a {
+            color: $white;
+            text-decoration: none;
+            font-weight: bold;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+}

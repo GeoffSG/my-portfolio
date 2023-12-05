@@ -1,0 +1,16 @@
+$primary-background: #0e285d;
+$primary-foreground: #edf8ff;
+
+
+@mixin theme-primary {
+    background-color: $primary-background;
+    color: $primary-foreground;
+}
+
+$dark-background: #323232;
+$dark-foreground: #edf8ff;
+
+@mixin theme-dark{
+    background-color: $dark-background;
+    color: $dark-foreground;
+}

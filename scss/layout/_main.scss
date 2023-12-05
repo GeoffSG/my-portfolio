@@ -1,0 +1,9 @@
+main {
+
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    
+    & > div {
+        scroll-snap-align: start;
+    }
+}
