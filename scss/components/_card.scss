@@ -12,9 +12,10 @@
     }
 
     &-box {
-        $w: calc(100vw - (7rem));
-        min-width: $w;
-        max-width: $w;
+        // $w: calc(100vw - (7rem));
+        // min-width: $w;
+        // max-width: $w;
+        width: calc(360px - 6rem);
     }
 
     .card-content {

@@ -470,8 +470,7 @@ footer .attribution a:hover {
   padding-bottom: 1rem;
 }
 .card-box {
-  min-width: calc(100vw - 7rem);
-  max-width: calc(100vw - 7rem);
+  width: calc(360px - 6rem);
 }
 .card .card-content {
   width: 100%;
@@ -482,7 +481,6 @@ footer .attribution a:hover {
   justify-content: space-between;
   gap: 4rem;
   padding: 2rem;
-  margin: 0 -2rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-padding: 2rem;
