@@ -369,7 +369,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: #CEAA24 solid 2px;
 }
 header h1 {
   text-align: center;
@@ -493,11 +492,15 @@ footer .attribution a:hover {
 }
 
 .container {
-  min-height: 100vh;
   width: 100%;
+  border-bottom: #CEAA24 solid 2px;
 }
 .container .section {
   padding: 1rem 2rem;
+}
+.container.full-height {
+  min-height: 100vh;
+  height: auto;
 }
 
 .theme-primary {
