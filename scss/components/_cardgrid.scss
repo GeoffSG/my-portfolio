@@ -7,7 +7,7 @@
     margin: 0 calc(0rem - $base-spacing);
 
     overflow-x: auto;
-    scroll-snap-type: x proximity;
+    scroll-snap-type: x mandatory;
     scroll-padding: $base-spacing;
     .card {
         scroll-snap-align: center;

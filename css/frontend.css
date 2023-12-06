@@ -485,7 +485,7 @@ footer .attribution a:hover {
   padding: 2rem;
   margin: 0 -2rem;
   overflow-x: auto;
-  scroll-snap-type: x proximity;
+  scroll-snap-type: x mandatory;
   scroll-padding: 2rem;
 }
 .card-grid .card {
