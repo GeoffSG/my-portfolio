@@ -1,0 +1,9 @@
+.container {
+    // margin-bottom: auto;
+    min-height: 100vh;
+    width: 100%;
+
+    .section {
+        padding: calc($base-spacing/2) $base-spacing;
+    }
+}
