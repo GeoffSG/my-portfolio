@@ -5,3 +5,9 @@
     background-color: $background;
     color: $foreground;
 }
+
+a.theme-secondary {
+    &:hover {
+        background-color: #63ADF7;
+    }
+}
