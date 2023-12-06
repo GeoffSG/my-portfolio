@@ -11,5 +11,14 @@
         padding-bottom: calc($base-spacing/2);
     }
 
+    &-box {
+        $w: calc(100vw - (7rem));
+        min-width: $w;
+        max-width: $w;
+    }
+
+    .card-content {
+        width: 100%;
+    }
 
 }
