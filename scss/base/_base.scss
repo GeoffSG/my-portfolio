@@ -15,15 +15,5 @@ img {
 h1, h2, h3 {
     font-family: $font-heading;
     margin: 0;
-<<<<<<< Updated upstream
-}
-
-body {
-    header,
-    main .section {
-        scroll-snap-align: start end;
-    }
-=======
     margin-bottom: calc($base-spacing/2);
->>>>>>> Stashed changes
 }
