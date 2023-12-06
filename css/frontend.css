@@ -351,7 +351,6 @@ template {
 html {
   font-size: 16px;
   font-family: "Slabo 13px", serif, sans-serif;
-  scroll-snap-type: y mandatory;
 }
 
 img {
@@ -362,17 +361,26 @@ img {
 h1, h2, h3 {
   font-family: "Milonga", serif;
   margin: 0;
+<<<<<<< Updated upstream
 }
 
 body header,
+<<<<<<< Updated upstream
 body main .section {
   scroll-snap-align: start end;
+=======
+body main .section,
+body footer {
+  scroll-snap-align: start;
+=======
+  margin-bottom: 1rem;
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 }
 
 header {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: center;
   align-items: center;
   border-bottom: #CEAA24 solid 2px;
@@ -398,7 +406,7 @@ header .cover {
   border: #CEAA24 solid 2px;
 }
 header .cover img {
-  width: 192px;
+  width: 150px;
   height: auto;
   margin-bottom: 1rem;
 }
@@ -454,7 +462,17 @@ footer .attribution a:hover {
 .btn {
   display: block;
   padding: 1rem 2rem;
+<<<<<<< Updated upstream
   color: #edf8ff;
+=======
+<<<<<<< Updated upstream
+  margin: 2rem 1rem;
+  color: #f9f9f9;
+=======
+  margin: 1rem;
+  color: #edf8ff;
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
   font-size: 1.2rem;
   font-weight: 700;
   text-align: center;
@@ -463,6 +481,13 @@ footer .attribution a:hover {
 .btn.rounded {
   border-radius: 2rem;
 }
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+.btn.dark {
+  background-color: #313131;
+=======
+>>>>>>> Stashed changes
 
 .card {
   padding: 2rem 1rem;
@@ -482,11 +507,19 @@ footer .attribution a:hover {
 }
 
 .container {
+<<<<<<< Updated upstream
   margin-bottom: auto;
   min-height: 100vh;
 }
 .container .section {
   padding: 2rem;
+=======
+  min-height: 100vh;
+  width: 100%;
+}
+.container .section {
+  padding: 1rem 2rem;
+>>>>>>> Stashed changes
 }
 
 .theme-primary {
@@ -515,4 +548,8 @@ a.theme-gold:hover {
 .theme-dark {
   background-color: #323232;
   color: #edf8ff;
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 }/*# sourceMappingURL=frontend.css.map */
