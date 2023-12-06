@@ -17,17 +17,7 @@ $breakpoints: (
 			@content;
 		}
     }
-	@else if $break == "md" {
-		@media (min-width: (get-breakpoint($break))) {
-			@content;
-		}
-	}
-	@else if $break == "lg" {
-		@media (min-width: (get-breakpoint($break))) {
-			@content;
-		}
-	}
-	@else if $break == "xl" {
+	@else if ($break == "md" or $break == "lg" or $break == "xl")  {
 		@media (min-width: (get-breakpoint($break))) {
 			@content;
 		}
