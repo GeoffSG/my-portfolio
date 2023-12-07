@@ -488,7 +488,7 @@ footer .attribution a:hover {
 
 .card-grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 4rem;
   padding: 2rem;
   margin-bottom: 1rem;
