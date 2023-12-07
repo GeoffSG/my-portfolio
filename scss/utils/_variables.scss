@@ -10,9 +10,11 @@ $base-margin: 1rem;
 
 
 //  Colors
+
 $white: #edf8ff;
 $grey: #696969;
 $dark-grey: #313131;
+$black: #121212;
 
 $gold: #CEAA24;
 $gold-l: #E6D55E;
@@ -20,3 +22,5 @@ $gold-l: #E6D55E;
 $blue-d: #0e285d;
 
 $border-gold: $gold solid 2px;
+
+$base-box-shadow: 0px 0px $base-spacing $black;

@@ -12,8 +12,16 @@ img {
     height: auto;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: $font-heading;
     margin: 0;
     margin-bottom: calc($base-spacing/2);
+}
+
+
+ul {
+    padding-left: $base-spacing;
+}
+li {
+    margin-bottom: calc($base-spacing/4);
 }

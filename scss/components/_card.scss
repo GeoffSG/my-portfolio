@@ -4,11 +4,14 @@
     border: $border-gold;
     border-radius: $base-spacing;
 
-    box-shadow: 0px 0px $base-spacing $blue-d;
+    box-shadow: $base-box-shadow;
 
-    h2 {
+    h2, h3, h4 {
         text-align: center;
-        padding-bottom: calc($base-spacing/2);
+        // padding-bottom: calc($base-spacing/2);
+        small {
+            color: $gold;
+        }
     }
 
     &-box {
