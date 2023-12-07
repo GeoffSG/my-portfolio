@@ -1,10 +1,16 @@
 .wrapper {
     
-    height: 100vh;
-    background-color: $white;
+    background-color: $blue-xd;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
+    // @include mq('md') {
+    //     justify-content: space-between;
+    // }
 
-    @include mq('md') {
-        justify-content: space-between;
+    main {
+        height: 100%;
+        align-self: stretch;
     }
 }
