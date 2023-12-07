@@ -515,6 +515,9 @@ footer .attribution a:hover {
   background-color: #0e285d;
   color: #edf8ff;
 }
+.theme-primary hr {
+  color: #205AD5;
+}
 
 .theme-secondary {
   background-color: #205AD5;
