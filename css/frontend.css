@@ -491,10 +491,13 @@ footer .attribution a:hover {
   justify-content: space-between;
   gap: 4rem;
   padding: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-padding: 2rem;
 }
+.card-grid div,
 .card-grid .card {
   scroll-snap-align: center;
 }
@@ -518,6 +521,13 @@ footer .attribution a:hover {
 .theme-primary hr {
   color: #205AD5;
 }
+.theme-primary a {
+  color: #CEAA24;
+  text-decoration: none;
+}
+.theme-primary a:hover {
+  color: #E6D55E;
+}
 
 .theme-secondary {
   background-color: #205AD5;
@@ -532,8 +542,15 @@ a.theme-secondary:hover {
   background-color: #CEAA24;
   color: #0e285d;
 }
+.theme-gold a {
+  color: #0e285d;
+}
 
-a.theme-gold:hover {
+.btn.theme-gold {
+  color: #0e285d;
+}
+.btn.theme-gold:hover {
+  color: #0e285d;
   background-color: #E6D55E;
 }
 

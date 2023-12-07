@@ -4,11 +4,14 @@
 
     gap: calc($base-spacing*2);
     padding: $base-spacing;
-    // margin: $base-spacing;
+    margin-bottom: calc($base-spacing/2);
+    border-radius: $base-spacing;
 
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-padding: $base-spacing;
+    
+    div,
     .card {
         scroll-snap-align: center;
     }

@@ -8,6 +8,17 @@
     hr {
         color: $blue;
     }
+
+    a {
+        // background-color: $background;
+        color: $gold;
+        text-decoration: none;
+        &:hover {
+            color: $gold-l;
+        }
+    }
 }
+
+
 
 

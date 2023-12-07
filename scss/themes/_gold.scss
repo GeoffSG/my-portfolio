@@ -3,10 +3,17 @@
     $foreground: $blue-d;
     background-color: $background;
     color: $foreground;
+
+    a {
+        color: $foreground;
+    }
 }
 
-a.theme-gold {
+.btn.theme-gold {
+    color: $blue-d;
     &:hover {
+        color: $blue-d;
         background-color: $gold-l;
     }
 }
+
