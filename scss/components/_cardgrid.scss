@@ -15,16 +15,8 @@
         scroll-snap-align: center;
     }
 
-    &.justify-center {
-        @include mq('md') {
-            &-md {
-                justify-content: center;
-            }
-        }
-        @include mq('lg') {
-            &-lg {
-                justify-content: center;
-            }
-        }
+    @include mq('lg') {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }

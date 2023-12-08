@@ -18,7 +18,14 @@
         // $w: calc(100vw - (7rem));
         // min-width: $w;
         // max-width: $w;
-        width: calc(360px - 8rem);
+        $w: get-breakpoint('sm');
+        width: calc($w - 8rem);
+        @include mq('md') {
+            width: calc($w - 6rem);
+        }
+        @include mq('lg') {
+            width: calc($w - 4rem);
+        }
     }
 
     .card-content {

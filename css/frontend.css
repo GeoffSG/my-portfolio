@@ -484,6 +484,16 @@ footer .attribution a:hover {
 .card-box {
   width: calc(360px - 8rem);
 }
+@media (min-width: 768px) {
+  .card-box {
+    width: calc(360px - 6rem);
+  }
+}
+@media (min-width: 990px) {
+  .card-box {
+    width: calc(360px - 4rem);
+  }
+}
 .card .card-content {
   width: 100%;
 }
@@ -502,14 +512,10 @@ footer .attribution a:hover {
 .card-grid .card {
   scroll-snap-align: center;
 }
-@media (min-width: 768px) {
-  .card-grid.justify-center-md {
-    justify-content: center;
-  }
-}
 @media (min-width: 990px) {
-  .card-grid.justify-center-lg {
+  .card-grid {
     justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
