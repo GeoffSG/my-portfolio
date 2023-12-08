@@ -7,14 +7,19 @@
 
     border-bottom: $border-gold;
 
-    .section {
-        padding: calc($base-spacing/2) $base-spacing;
-    }
-
     @include mq('sm'){
         // &.full-height {
         //     min-height: 100vh;
         //     height: auto;
         // }
+    }
+}
+
+.section {
+    padding: calc($base-spacing/2) $base-spacing;
+    
+    h2 {
+        text-align: center;
+        padding-bottom: calc($base-spacing/4);
     }
 }
