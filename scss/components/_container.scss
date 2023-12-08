@@ -18,8 +18,13 @@
 .section {
     padding: calc($base-spacing/2) $base-spacing;
     
-    h2 {
+    &-heading {
         text-align: center;
         padding-bottom: calc($base-spacing/4);
+    }
+
+    &-description {
+        max-width: get-breakpoint('md');
+        margin: 0 auto;
     }
 }

@@ -377,6 +377,10 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #0e285d;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 header h1 {
   text-align: center;
@@ -390,6 +394,7 @@ header h1 small {
 header .cover {
   background-image: url("../img/map.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -517,9 +522,13 @@ footer .attribution a:hover {
 .section {
   padding: 1rem 2rem;
 }
-.section h2 {
+.section-heading {
   text-align: center;
   padding-bottom: 0.5rem;
+}
+.section-description {
+  max-width: 768px;
+  margin: 0 auto;
 }
 
 .theme-primary {
