@@ -25,4 +25,4 @@ $blue-xd: #071531;
 
 $border-gold: $gold solid 2px;
 
-$base-box-shadow: 0px 0px $base-spacing $black;
+$base-box-shadow: 0px 0px calc($base-spacing/2) $black;
