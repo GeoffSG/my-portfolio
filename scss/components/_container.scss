@@ -12,9 +12,9 @@
     }
 
     @include mq('sm'){
-        &.full-height {
-            min-height: 100vh;
-            height: auto;
-        }
+        // &.full-height {
+        //     min-height: 100vh;
+        //     height: auto;
+        // }
     }
 }
