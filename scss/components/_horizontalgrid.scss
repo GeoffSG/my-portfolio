@@ -1,4 +1,4 @@
-.card-grid {
+.horizontal-grid {
     display: flex;
     // justify-content: center;
     gap: calc($base-spacing*2);
@@ -10,8 +10,7 @@
     scroll-snap-type: x mandatory;
     scroll-padding: $base-spacing;
     
-    div,
-    .card {
+    div {
         scroll-snap-align: center;
     }
 

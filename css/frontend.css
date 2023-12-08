@@ -498,7 +498,7 @@ footer .attribution a:hover {
   width: 100%;
 }
 
-.card-grid {
+.horizontal-grid {
   display: flex;
   gap: 4rem;
   padding: 2rem;
@@ -508,12 +508,11 @@ footer .attribution a:hover {
   scroll-snap-type: x mandatory;
   scroll-padding: 2rem;
 }
-.card-grid div,
-.card-grid .card {
+.horizontal-grid div {
   scroll-snap-align: center;
 }
 @media (min-width: 990px) {
-  .card-grid {
+  .horizontal-grid {
     justify-content: center;
     flex-wrap: wrap;
   }
