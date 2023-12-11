@@ -775,13 +775,19 @@ form .btn-group input {
   display: inline;
 }
 .nav-menu .nav-social-media li a {
+  display: inline-block;
+  width: auto;
   background-color: #205AD5;
   color: #edf8ff;
   text-decoration: none;
+  text-align: center;
   font-size: 1rem;
   line-height: 1rem;
   padding: 1rem;
   border-radius: 2rem;
+}
+.nav-menu .nav-social-media li a span {
+  margin: 0;
 }
 
 .theme-primary {

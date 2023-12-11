@@ -31,14 +31,21 @@
         li {
             display: inline;
             a {
+                display: inline-block;
+                width: auto;
                 background-color: $blue;
                 color: $white;
                 text-decoration: none;
+                text-align: center;
                 font-size: 1rem;
                 line-height: 1rem;
                 padding: calc($base-spacing/2);
                 
                 border-radius: $base-spacing;
+
+                span {
+                    margin: 0;
+                }
             }
         }
     }
