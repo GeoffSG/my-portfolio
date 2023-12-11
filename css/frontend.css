@@ -454,6 +454,22 @@ footer .attribution a:hover {
   text-decoration: underline;
 }
 
+form .form-input {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 1rem;
+}
+form .form-input label {
+  margin-bottom: 0.5rem;
+}
+form .form-input input {
+  padding: 0.5rem 1rem;
+}
+form .form-input textarea {
+  padding: 1rem;
+}
+
 .btn {
   display: block;
   padding: 1rem 2rem;
