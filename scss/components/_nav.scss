@@ -2,23 +2,36 @@
     display: none;
     z-index: 1;
 
-    position: fixed;
+    
+    min-width: 256px;
     width: 256px;
-    height: 100%;
+    height: 100vh;
     background-color: $blue-d;
 
-    // padding: $base-spacing;
+    border-right: $border-gold;
 
-
+    // Always show on large screens
     @include mq ('lg') {
         display: block;
     }
 
+    .icon {
+        padding: calc($base-spacing/2);
+        a {
+            display: block;
+            width: 128px;
+            height: 128px;
+            margin: auto;
+        }
+    }
+
+    /* Main Nav Menu */
     ul {
         padding: 0;
         li {
             list-style: none;
             margin: 0;
+            width: 100%;
             a {
                 width: 100%;
                 margin: 0;
@@ -26,6 +39,7 @@
         }
     }
 
+    /* Social Media Buttons */
     .nav-social-media {
         text-align: center;
         margin: 0;
@@ -44,6 +58,11 @@
                 padding: calc($base-spacing/2);
                 
                 border-radius: $base-spacing;
+
+                &:hover {
+                    background-color: $blue-l;
+                }
+
 
                 span {
                     margin: 0;
