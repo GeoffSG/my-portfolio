@@ -1,0 +1,39 @@
+.nav-menu {
+    position: absolute;
+    width: 256px;
+    height: 100%;
+    background-color: $blue-d;
+
+    // padding: $base-spacing;
+
+    ul {
+        padding: 0;
+        li {
+            list-style: none;
+            margin: 0;
+            a {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+
+    .nav-social-media {
+        text-align: center;
+        margin: 0;
+        padding: calc($base-spacing/2);
+        li {
+            display: inline;
+            a {
+                background-color: $blue;
+                color: $white;
+                text-decoration: none;
+                font-size: 1rem;
+                line-height: 1rem;
+                padding: calc($base-spacing/2);
+                
+                border-radius: $base-spacing;
+            }
+        }
+    }
+}
