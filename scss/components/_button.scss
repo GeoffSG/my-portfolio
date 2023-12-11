@@ -1,5 +1,6 @@
 .btn {
     display: block;
+
     padding: calc($base-spacing/2) $base-spacing;
     margin: $base-spacing calc($base-spacing/2);
 
@@ -13,5 +14,12 @@
 
     &.rounded{
         border-radius: $base-spacing;
+    }
+
+    &-nav {
+        text-align: left;
+        [class^="icon-"], [class*=" icon-"] {
+            margin-right: calc($base-spacing/2);
+        }
     }
 }

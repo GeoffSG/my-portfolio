@@ -116,6 +116,91 @@
   }
 }
 
+/* ../fonts */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?mhtr91");
+  src: url("../fonts/icomoon.eot?mhtr91#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?mhtr91") format("truetype"), url("../fonts/icomoon.woff?mhtr91") format("woff"), url("../fonts/icomoon.svg?mhtr91#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  width: 19px;
+}
+
+.icon-touch:before {
+  content: "\e901";
+}
+
+.icon-file-code:before {
+  content: "\e904";
+}
+
+.icon-graduation-cap:before {
+  content: "\e903";
+}
+
+.icon-paper-plane:before {
+  content: "\e902";
+}
+
+.icon-send:before {
+  content: "\e902";
+}
+
+.icon-linkedin:before {
+  content: "\e900";
+}
+
+.icon-x:before {
+  content: "\e905";
+}
+
+.icon-profile:before {
+  content: "\e923";
+}
+
+.icon-envelop:before {
+  content: "\e945";
+}
+
+.icon-history:before {
+  content: "\e94d";
+}
+
+.icon-cross:before {
+  content: "\ea0f";
+}
+
+.icon-arrow-right:before {
+  content: "\ea3c";
+}
+
+.icon-arrow-left:before {
+  content: "\ea40";
+}
+
+.icon-code:before {
+  content: "\ea80";
+}
+
+.icon-terminal:before {
+  content: "\ea81";
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -584,6 +669,12 @@ form .btn-group input {
 }
 .btn.rounded {
   border-radius: 2rem;
+}
+.btn-nav {
+  text-align: left;
+}
+.btn-nav [class^=icon-], .btn-nav [class*=" icon-"] {
+  margin-right: 1rem;
 }
 
 .card {
