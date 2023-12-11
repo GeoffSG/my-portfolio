@@ -570,6 +570,7 @@ header .cover {
   background-image: url("../img/map.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
