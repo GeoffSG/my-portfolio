@@ -9,7 +9,7 @@
     }
 }
 
-.appear {
+.visible {
     @each $name, $bkpt in $breakpoints {
         &-#{$name} {
             display: none !important;

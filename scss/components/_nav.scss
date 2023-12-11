@@ -1,16 +1,18 @@
 .nav-menu {
     display: none;
+    z-index: 1;
 
-    @include mq ('lg') {
-        display: block;
-    }
-
-    // position: absolute;
+    position: fixed;
     width: 256px;
     height: 100%;
     background-color: $blue-d;
 
     // padding: $base-spacing;
+
+
+    @include mq ('lg') {
+        display: block;
+    }
 
     ul {
         padding: 0;
