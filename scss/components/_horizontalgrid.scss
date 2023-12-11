@@ -2,9 +2,11 @@
     display: flex;
     // justify-content: center;
     gap: calc($base-spacing*2);
-    padding: $base-spacing;
+    padding: calc($base-spacing/2) $base-spacing;
     margin-bottom: calc($base-spacing/2);
     border-radius: $base-spacing;
+
+    position: relative;
 
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -18,4 +20,8 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+}
+
+p.horizontal-indicator {
+    margin: 0;
 }
