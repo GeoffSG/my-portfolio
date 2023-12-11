@@ -8,7 +8,7 @@ form {
             margin-bottom: calc($base-spacing/4);
         }
         input, textarea {
-            padding: calc($base-spacing/2);
+            padding: calc($base-spacing/3) calc($base-spacing/2);
             background-color: $blue-d;
             color: $white;
             border: none;
@@ -25,4 +25,13 @@ form {
             border: none;
         }
     }
+}
+
+.card-form {
+    width: 70%;
+    margin: auto;
+}
+
+.container-form {
+    padding: $base-spacing;
 }

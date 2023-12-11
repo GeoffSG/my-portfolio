@@ -1,23 +1,17 @@
 .card {
     padding: $base-spacing calc($base-spacing/2);
-
     border: $border-gold;
     border-radius: $base-spacing;
-
     box-shadow: $base-box-shadow;
 
     h2, h3, h4 {
         text-align: center;
-        // padding-bottom: calc($base-spacing/2);
         small {
             color: $gold;
         }
     }
 
     &-box {
-        // $w: calc(100vw - (7rem));
-        // min-width: $w;
-        // max-width: $w;
         $w: get-breakpoint('sm');
         width: calc($w - 8rem);
         @include mq('md') {
