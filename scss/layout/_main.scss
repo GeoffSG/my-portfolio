@@ -1,9 +1,5 @@
-main {
-
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    
-    & > div {
-        scroll-snap-align: start;
-    }
+.main {
+    display: flex;
+    height: 100%;
+    background-color: $blue-d;
 }

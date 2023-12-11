@@ -1,5 +1,11 @@
 .nav-menu {
-    position: absolute;
+    display: none;
+
+    @include mq ('lg') {
+        display: block;
+    }
+
+    // position: absolute;
     width: 256px;
     height: 100%;
     background-color: $blue-d;

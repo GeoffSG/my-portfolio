@@ -3,7 +3,8 @@ $breakpoints: (
     'sm': 360px,
     'md': 768px,
     'lg': 990px,
-    'xl': 1200px
+    'xl': 1200px,
+	'xxl': 1710px
 );
 
 @function get-breakpoint($bkpt) {
@@ -17,7 +18,7 @@ $breakpoints: (
 			@content;
 		}
     }
-	@else if ($break == "md" or $break == "lg" or $break == "xl")  {
+	@else if ($break == "md" or $break == "lg" or $break == "xl" or $break == "xxl")  {
 		@media (min-width: (get-breakpoint($break))) {
 			@content;
 		}

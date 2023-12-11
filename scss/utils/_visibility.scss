@@ -1,0 +1,21 @@
+.hidden {
+    @each $name, $bkpt in $breakpoints {
+        &-#{$name} {
+            display: inherit !important;
+            @include mq($name) {
+                display: none !important;
+            }
+        }
+    }
+}
+
+.appear {
+    @each $name, $bkpt in $breakpoints {
+        &-#{$name} {
+            display: none !important;
+            @include mq($name) {
+                display: inherit !important;
+            }
+        }
+    }
+}

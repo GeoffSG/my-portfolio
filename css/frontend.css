@@ -34,6 +34,88 @@
   src: url(https://fonts.gstatic.com/s/slabo13px/v15/11hEGp_azEvXZUdSBzzRQKCh2g.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+.hidden-sm {
+  display: inherit !important;
+}
+@media (min-width: 360px) and (max-width: 768px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+.hidden-md {
+  display: inherit !important;
+}
+@media (min-width: 768px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+.hidden-lg {
+  display: inherit !important;
+}
+@media (min-width: 990px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+.hidden-xl {
+  display: inherit !important;
+}
+@media (min-width: 1200px) {
+  .hidden-xl {
+    display: none !important;
+  }
+}
+.hidden-xxl {
+  display: inherit !important;
+}
+@media (min-width: 1710px) {
+  .hidden-xxl {
+    display: none !important;
+  }
+}
+
+.appear-sm {
+  display: none !important;
+}
+@media (min-width: 360px) and (max-width: 768px) {
+  .appear-sm {
+    display: inherit !important;
+  }
+}
+.appear-md {
+  display: none !important;
+}
+@media (min-width: 768px) {
+  .appear-md {
+    display: inherit !important;
+  }
+}
+.appear-lg {
+  display: none !important;
+}
+@media (min-width: 990px) {
+  .appear-lg {
+    display: inherit !important;
+  }
+}
+.appear-xl {
+  display: none !important;
+}
+@media (min-width: 1200px) {
+  .appear-xl {
+    display: inherit !important;
+  }
+}
+.appear-xxl {
+  display: none !important;
+}
+@media (min-width: 1710px) {
+  .appear-xxl {
+    display: inherit !important;
+  }
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -418,6 +500,7 @@ header .content {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
   position: relative;
 }
 .wrapper main {
@@ -469,6 +552,12 @@ form .form-input input {
 }
 form .form-input textarea {
   padding: 1rem;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  background-color: #0e285d;
 }
 
 .btn {
@@ -554,10 +643,15 @@ form .form-input textarea {
 }
 
 .nav-menu {
-  position: absolute;
+  display: none;
   width: 256px;
   height: 100%;
   background-color: #0e285d;
+}
+@media (min-width: 990px) {
+  .nav-menu {
+    display: block;
+  }
 }
 .nav-menu ul {
   padding: 0;
