@@ -7,11 +7,22 @@ form {
         label {
             margin-bottom: calc($base-spacing/4);
         }
-        input {
-            padding: calc($base-spacing/4) calc($base-spacing/2);
-        }
-        textarea {
+        input, textarea {
             padding: calc($base-spacing/2);
+            background-color: $blue-d;
+            color: $white;
+            border: none;
+        }
+    }
+    .btn-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: $base-spacing;
+        input {
+            width: 50%;
+            margin: 0;
+            border: none;
         }
     }
 }
