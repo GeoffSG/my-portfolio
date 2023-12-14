@@ -638,16 +638,16 @@ footer .attribution a:hover {
   text-decoration: underline;
 }
 
-form .form-input {
+form .form-group {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   margin-bottom: 1rem;
 }
-form .form-input label {
+form .form-group label {
   margin-bottom: 0.5rem;
 }
-form .form-input input, form .form-input textarea {
+form .form-group input, form .form-group textarea {
   padding: 0.6666666667rem 1rem;
   background-color: #0e285d;
   color: #edf8ff;
@@ -881,4 +881,8 @@ a.theme-secondary:hover {
 .theme-dark {
   background-color: #323232;
   color: #edf8ff;
+}
+
+.error {
+  color: red;
 }/*# sourceMappingURL=frontend.css.map */
