@@ -64,10 +64,6 @@ function displayError(inputGroup, message) {
     //  Get the input group's label element
     const inputLabel = inputGroup.children('label');
     
-    //  If the success styles are applied, remove them
-    if(inputGroup.hasClass('success'))
-        inputGroup.removeClass('success');
-
     //  Add the error class to the input group, only if it hasn't already.
     if(!inputGroup.hasClass('error'))
         inputGroup.addClass('error');
@@ -81,15 +77,32 @@ function displayError(inputGroup, message) {
 }
 
 function clearError(inputGroup) {
-    if(inputGroup.hasClass('error'))
+    if(inputGroup.hasClass('error')) {
         inputGroup.removeClass('error');
         inputGroup.children('label').children('small').html('');
+    }
 }
 
 function displaySuccess(inputGroup) {
     if(!inputGroup.hasClass('success'))
         inputGroup.addClass('success');
 }
+
+function clearSuccess(inputGroup) {
+    if(inputGroup.hasClass('success'))
+        inputGroup.removeClass('success');
+}
+
+$('.form-input').on('keyup', function(){
+    const validInput = checkError($(this).attr('id'), $(this).val());
+    if(validInput.hasError) {
+        //  Apply styles
+        displayError($(this).parent(), validInput.errorMessage);
+    } else {
+        clearError($(this).parent());
+        displaySuccess($(this).parent());
+    }
+});
 
 $('.form-contact #submit').on('click', function(event){
     event.preventDefault();
@@ -99,7 +112,11 @@ $('.form-contact #submit').on('click', function(event){
         const validInput = checkError($(this).attr('id'), $(this).val());
         if(validInput.hasError) {
             //  Apply styles
+            clearSuccess($(this).parent());
             displayError($(this).parent(), validInput.errorMessage);
+        } else {
+            clearError($(this).parent());
+            displaySuccess($(this).parent());
         }
     });
 
@@ -109,6 +126,8 @@ $('.form-contact #reset').on('click', function(event) {
     event.preventDefault();
     //  For each input, show an error if they're empty
     $('.form-input').each(function(index, element){
+        clearSuccess($(this).parent());
         clearError($(this).parent());
+        $(this).val('');
     });
 });

@@ -6,15 +6,17 @@ form {
         margin-bottom: calc($base-spacing/2);
         label {
             margin-bottom: calc($base-spacing/4);
-            // small {
-            //     color: red;
-            // }
+            
         }
         input, textarea {
             padding: calc($base-spacing/3) calc($base-spacing/2);
             background-color: $blue-d;
             color: $white;
             border: none;
+            &:focus {
+                outline: 2px solid $white;
+                background-color: lighten($blue-d,10%);
+            }
         }
     }
     .btn-group {
@@ -35,14 +37,22 @@ form {
         small {
             color: $red;
         }
-        input {
+        input,textarea {
             border: 2px solid $red !important;
+            &:focus {
+                border: 2px solid $white !important;
+                outline: 4px solid $red !important;
+            }
         }
     }
 
     .success {
-        input {
+        input,textarea {
             border: 2px solid $green !important;
+            &:focus {
+                border: 2px solid $white !important;
+                outline: 4px solid $green !important;
+            }
         }
     }
 

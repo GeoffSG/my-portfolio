@@ -659,6 +659,10 @@ form .form-group input, form .form-group textarea {
   color: #edf8ff;
   border: none;
 }
+form .form-group input:focus, form .form-group textarea:focus {
+  outline: 2px solid #edf8ff;
+  background-color: #153b89;
+}
 form .btn-group {
   display: flex;
   flex-direction: row;
@@ -673,11 +677,19 @@ form .btn-group input {
 form .error small {
   color: rgb(206, 33, 27);
 }
-form .error input {
+form .error input, form .error textarea {
   border: 2px solid rgb(206, 33, 27) !important;
 }
-form .success input {
+form .error input:focus, form .error textarea:focus {
+  border: 2px solid #edf8ff !important;
+  outline: 4px solid rgb(206, 33, 27) !important;
+}
+form .success input, form .success textarea {
   border: 2px solid rgb(40, 168, 40) !important;
+}
+form .success input:focus, form .success textarea:focus {
+  border: 2px solid #edf8ff !important;
+  outline: 4px solid rgb(40, 168, 40) !important;
 }
 
 .card-form {
