@@ -1,4 +1,5 @@
 .hidden {
+    display: none !important;
     @each $name, $bkpt in $breakpoints {
         &-#{$name} {
             display: inherit !important;

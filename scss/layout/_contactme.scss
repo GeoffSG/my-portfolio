@@ -28,6 +28,25 @@ form {
             border: none;
         }
     }
+    /* == VALIDATION STYLES */
+    $red: rgb(206, 33, 27);
+    $green: rgb(40, 168, 40);
+    .error {
+        small {
+            color: $red;
+        }
+        input {
+            border: 2px solid $red !important;
+        }
+    }
+
+    .success {
+        input {
+            border: 2px solid $green !important;
+        }
+    }
+
+
 }
 
 .card-form {
