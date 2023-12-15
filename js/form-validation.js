@@ -97,6 +97,7 @@ $('.form-input').on('keyup', function(){
     const validInput = checkError($(this).attr('id'), $(this).val());
     if(validInput.hasError) {
         //  Apply styles
+        clearSuccess($(this).parent());
         displayError($(this).parent(), validInput.errorMessage);
     } else {
         clearError($(this).parent());
