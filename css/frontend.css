@@ -802,8 +802,10 @@ p.horizontal-indicator {
 }
 
 .nav-menu {
-  display: none;
+  position: absolute;
+  left: -256px;
   z-index: 1;
+  transition: 0.5s;
   min-width: 256px;
   width: 256px;
   height: 100vh;
@@ -812,9 +814,29 @@ p.horizontal-indicator {
   /* Main Nav Menu */
   /* Social Media Buttons */
 }
+.nav-menu .hamburger {
+  position: absolute;
+  left: 100%;
+  top: 64px;
+  margin: 0;
+  background-color: #0e285d;
+  border: #CEAA24 solid 2px;
+}
+.nav-menu .hamburger .hamburger-box .hamburger-inner, .nav-menu .hamburger .hamburger-box .hamburger-inner::after, .nav-menu .hamburger .hamburger-box .hamburger-inner::before {
+  background-color: #edf8ff;
+}
+@media (min-width: 990px) {
+  .nav-menu .hamburger {
+    display: none;
+  }
+}
+.nav-menu.is-active {
+  left: 0;
+}
 @media (min-width: 990px) {
   .nav-menu {
-    display: block;
+    position: relative;
+    left: 0;
   }
 }
 .nav-menu .icon {

@@ -1,18 +1,55 @@
 .nav-menu {
-    display: none;
+    //  Hamburger Menu Button
+    .hamburger {
+        position: absolute;
+        left:100%;
+        top: 64px;
+
+        margin: 0;
+        background-color: $blue-d;
+        border: $border-gold;
+
+        .hamburger-box {
+            .hamburger-inner {
+                &,
+                &::after,
+                &::before{
+                    background-color: $white;
+                }
+            }
+        }
+        
+        @include mq ('lg') {
+            display: none;
+        }
+    }
+    //  Slide menu when active
+    &.is-active{
+        left: 0;
+    }
+
+    //  Store width of the menu bar
+    $width-menu: 256px;
+
+    //  Position on top and off screen to the left
+    position: absolute;
+    left: -$width-menu;
     z-index: 1;
+    transition: .5s;
 
-    
-    min-width: 256px;
-    width: 256px;
+    //  Set size of the menu
+    min-width: $width-menu;
+    width: $width-menu;
     height: 100vh;
-    background-color: $blue-d;
 
+    //  Set styles
+    background-color: $blue-d;
     border-right: $border-gold;
 
     // Always show on large screens
     @include mq ('lg') {
-        display: block;
+        position: relative;
+        left: 0;
     }
 
     .icon {
