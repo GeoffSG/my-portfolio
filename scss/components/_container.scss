@@ -5,7 +5,7 @@
     max-width: get-breakpoint('xl');
     margin: 0 auto;
 
-    border-bottom: $border-gold;
+    // border-bottom: $border-gold;
 
     @include mq('sm'){
         // &.full-height {
