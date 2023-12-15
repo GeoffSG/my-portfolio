@@ -5,8 +5,7 @@ form {
         align-items: stretch;
         margin-bottom: calc($base-spacing/2);
         label {
-            margin-bottom: calc($base-spacing/4);
-            
+            margin-bottom: calc($base-spacing/2);
         }
         input, textarea {
             padding: calc($base-spacing/3) calc($base-spacing/2);
@@ -28,31 +27,6 @@ form {
             width: 50%;
             margin: 0;
             border: none;
-        }
-    }
-    /* == VALIDATION STYLES */
-    $red: rgb(206, 33, 27);
-    $green: rgb(40, 168, 40);
-    .error {
-        small {
-            color: $red;
-        }
-        input,textarea {
-            border: 2px solid $red !important;
-            &:focus {
-                border: 2px solid $white !important;
-                outline: 4px solid $red !important;
-            }
-        }
-    }
-
-    .success {
-        input,textarea {
-            border: 2px solid $green !important;
-            &:focus {
-                border: 2px solid $white !important;
-                outline: 4px solid $green !important;
-            }
         }
     }
 

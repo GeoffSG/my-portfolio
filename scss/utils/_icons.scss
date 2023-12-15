@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: 'icomoon';
-    src:  url('#{$dir-fonts}/icomoon.eot?mhtr91');
-    src:  url('#{$dir-fonts}/icomoon.eot?mhtr91#iefix') format('embedded-opentype'),
-      url('#{$dir-fonts}/icomoon.ttf?mhtr91') format('truetype'),
-      url('#{$dir-fonts}/icomoon.woff?mhtr91') format('woff'),
-      url('#{$dir-fonts}/icomoon.svg?mhtr91#icomoon') format('svg');
+    src:  url('#{$dir-fonts}/icomoon.eot?k89c7a');
+    src:  url('#{$dir-fonts}/icomoon.eot?k89c7a#iefix') format('embedded-opentype'),
+      url('#{$dir-fonts}/icomoon.ttf?k89c7a') format('truetype'),
+      url('#{$dir-fonts}/icomoon.woff?k89c7a') format('woff'),
+      url('#{$dir-fonts}/icomoon.svg?k89c7a#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -62,8 +62,20 @@
   .icon-history:before {
     content: "\e94d";
   }
+  .icon-user-tie:before {
+    content: "\e976";
+  }
+  .icon-suit:before {
+    content: "\e976";
+  }
   .icon-cross:before {
     content: "\ea0f";
+  }
+  .icon-checkmark:before {
+    content: "\ea10";
+  }
+  .icon-check:before {
+    content: "\ea10";
   }
   .icon-arrow-right:before {
     content: "\ea3c";

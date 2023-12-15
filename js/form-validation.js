@@ -1,29 +1,34 @@
 const inputCriteria = {
     "first-name":{
+        name: "First Name",
         min: 3,
         max: 25,
         isRequired: true,
         regex: /^[a-zA-Z]+$/
     },
     "last-name":{
+        name: "Last Name",
         min: 3,
         max: 25,
         isRequired: true,
         regex: /^[a-zA-Z]+$/
     },
     "email":{
+        name: "Email",
         min: 3,
         max: 50,
         isRequired: true,
         regex: /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/
     },
     "subject":{
+        name: "Subject",
         min: 3,
         max: 25,
         isRequired: true,
         regex: /^[0-9a-zA-Z]+$/
     },
     "message":{
+        name: "Message",
         min: 3,
         max: 9999,
         isRequired: true
@@ -40,18 +45,18 @@ function checkError(id, inputValue) {
         if(inputValue.length < currCriteria.min) {
             return {
                 hasError: true,
-                errorMessage: `<strong>ERROR:</strong> This must be more than ${currCriteria.min} characters long!`
+                errorMessage: `${currCriteria.name} must be more than ${currCriteria.min} characters long!`
             }
         } else if (inputValue.length > currCriteria.max) {
             return {
                 hasError: true,
-                errorMessage: `<strong>ERROR:</strong> This must be below ${currCriteria.max} characters!`
+                errorMessage: `${currCriteria.name} must be below ${currCriteria.max} characters!`
             }
         }
         if(!inputValue.match(currCriteria.regex)){
             return {
                 hasError: true,
-                errorMessage: `<strong>ERROR:</strong> Invalid ${id} entered!`
+                errorMessage: `Invalid ${currCriteria.name} entered!`
             }
         }
     }
@@ -65,27 +70,28 @@ function displayError(inputGroup, message) {
     const inputLabel = inputGroup.children('label');
     
     //  Add the error class to the input group, only if it hasn't already.
-    if(!inputGroup.hasClass('error'))
+    if(!inputGroup.hasClass('error')){
         inputGroup.addClass('error');
-
-    //  Add or change the error message.
-    let hasSmall = inputLabel.has('small');
-    if(hasSmall.length === 0)
-        inputLabel.append(` <small>${message}</small>`);
-    else
-        inputLabel.children('small').html(message);
+    }
+    inputLabel.html(` <span class="icon-cross"></span> ${message}`);
 }
 
 function clearError(inputGroup) {
+    const inputLabel = inputGroup.children('label');
     if(inputGroup.hasClass('error')) {
         inputGroup.removeClass('error');
-        inputGroup.children('label').children('small').html('');
     }
+    inputLabel.html('');
 }
 
 function displaySuccess(inputGroup) {
-    if(!inputGroup.hasClass('success'))
+    const inputLabel = inputGroup.children('label');
+    if(!inputGroup.hasClass('success')){
+        //<span class="icon-cross"></span>
         inputGroup.addClass('success');
+    }
+    inputLabel.html(` <span class="icon-check"></span>`);
+        
 }
 
 function clearSuccess(inputGroup) {
