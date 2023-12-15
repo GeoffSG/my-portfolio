@@ -1,6 +1,6 @@
 .horizontal-grid {
     display: flex;
-    // justify-content: center;
+    
     gap: calc($base-spacing*2);
     padding: calc($base-spacing/2) $base-spacing;
     margin-bottom: calc($base-spacing/2);
@@ -16,7 +16,7 @@
         scroll-snap-align: center;
     }
 
-    @include mq('lg') {
+    @include mq('xl') {
         justify-content: center;
         flex-wrap: wrap;
     }

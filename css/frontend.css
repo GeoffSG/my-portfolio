@@ -772,7 +772,7 @@ form .success input:focus, form .success textarea:focus {
 .horizontal-grid div {
   scroll-snap-align: center;
 }
-@media (min-width: 990px) {
+@media (min-width: 1200px) {
   .horizontal-grid {
     justify-content: center;
     flex-wrap: wrap;
