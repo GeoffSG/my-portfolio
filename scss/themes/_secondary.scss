@@ -4,6 +4,14 @@
 
     background-color: $background;
     color: $foreground;
+    
+    a {
+        color: $gold;
+        text-decoration: none;
+        &:hover {
+            color: $gold-l;
+        }
+    }
 }
 
 a.theme-secondary {

@@ -2,7 +2,7 @@
     display: grid;
     justify-content: center;
     gap: 2rem;
-    padding: 2rem;
+    padding: 1rem 2rem 2rem;
 
     @include mq('md') {
         &.col-2 {

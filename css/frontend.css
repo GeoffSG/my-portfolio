@@ -64,7 +64,7 @@
 .hidden-lg {
   display: inherit !important;
 }
-@media (min-width: 990px) {
+@media (min-width: 1024px) {
   .hidden-lg {
     display: none !important;
   }
@@ -72,7 +72,7 @@
 .hidden-xl {
   display: inherit !important;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .hidden-xl {
     display: none !important;
   }
@@ -105,7 +105,7 @@
 .visible-lg {
   display: none !important;
 }
-@media (min-width: 990px) {
+@media (min-width: 1024px) {
   .visible-lg {
     display: inherit !important;
   }
@@ -113,7 +113,7 @@
 .visible-xl {
   display: none !important;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .visible-xl {
     display: inherit !important;
   }
@@ -577,7 +577,7 @@ header {
   align-items: center;
   background-color: #0e285d;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 header h1 {
@@ -634,7 +634,7 @@ footer {
   align-items: center;
   background-color: #0e285d;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 footer .cover {
@@ -796,7 +796,7 @@ form .btn-group button#submit {
     width: calc(50vw - 5rem - 4px);
   }
 }
-@media (min-width: 990px) {
+@media (min-width: 1024px) {
   .card-box {
     width: 300px;
   }
@@ -816,7 +816,7 @@ form .btn-group button#submit {
 .horizontal-grid div {
   scroll-snap-align: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .horizontal-grid {
     display: grid;
     grid-template-columns: auto auto;
@@ -850,7 +850,7 @@ form .btn-group button#submit {
 }
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -860,8 +860,10 @@ form .btn-group button#submit {
 .section-heading {
   text-align: center;
   padding-bottom: 0.5rem;
+  padding-top: 1rem;
 }
 .section-description {
+  width: 75%;
   max-width: 768px;
   margin: 0 auto;
 }
@@ -890,7 +892,7 @@ form .btn-group button#submit {
 .nav-menu .hamburger .hamburger-box .hamburger-inner, .nav-menu .hamburger .hamburger-box .hamburger-inner::after, .nav-menu .hamburger .hamburger-box .hamburger-inner::before {
   background-color: #edf8ff;
 }
-@media (min-width: 990px) {
+@media (min-width: 1024px) {
   .nav-menu .hamburger {
     display: none;
   }
@@ -898,7 +900,7 @@ form .btn-group button#submit {
 .nav-menu.is-active {
   left: 0;
 }
-@media (min-width: 990px) {
+@media (min-width: 1024px) {
   .nav-menu {
     position: relative;
     left: 0;
@@ -956,7 +958,7 @@ form .btn-group button#submit {
   display: grid;
   justify-content: center;
   gap: 2rem;
-  padding: 2rem;
+  padding: 1rem 2rem 2rem;
 }
 @media (min-width: 768px) {
   .grid.col-2 {
@@ -968,7 +970,7 @@ form .btn-group button#submit {
     grid-template-columns: repeat(2, auto);
   }
 }
-@media (min-width: 768px) and (min-width: 1200px) {
+@media (min-width: 768px) and (min-width: 1440px) {
   .grid.col-3 {
     grid-template-columns: repeat(3, auto);
   }
@@ -978,7 +980,7 @@ form .btn-group button#submit {
     grid-template-columns: repeat(2, auto);
   }
 }
-@media (min-width: 768px) and (min-width: 1200px) {
+@media (min-width: 768px) and (min-width: 1440px) {
   .grid.col-4 {
     grid-template-columns: repeat(4, auto);
   }
@@ -1002,6 +1004,13 @@ form .btn-group button#submit {
 .theme-secondary {
   background-color: #205AD5;
   color: #edf8ff;
+}
+.theme-secondary a {
+  color: #CEAA24;
+  text-decoration: none;
+}
+.theme-secondary a:hover {
+  color: #E6D55E;
 }
 
 a.theme-secondary:hover {

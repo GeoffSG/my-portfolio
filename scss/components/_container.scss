@@ -12,9 +12,11 @@
     &-heading {
         text-align: center;
         padding-bottom: calc($base-spacing/4);
+        padding-top: calc($base-spacing/2);
     }
 
     &-description {
+        width: 75%;
         max-width: get-breakpoint('md');
         margin: 0 auto;
     }
