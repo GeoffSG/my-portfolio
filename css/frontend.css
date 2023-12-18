@@ -685,7 +685,19 @@ form .form-group {
   margin-bottom: 1rem;
 }
 form .form-group label {
-  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  border: 0;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom: 0;
+  background-color: #153b89;
+  font-size: 14px;
+}
+form .form-group label span {
+  margin-right: 12px;
 }
 form .form-group input, form .form-group textarea {
   padding: 0.6666666667rem 1rem;
@@ -699,23 +711,40 @@ form .form-group input:focus, form .form-group textarea:focus {
 }
 form .btn-group {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 2rem;
+  flex-direction: column;
 }
-form .btn-group input {
-  width: 50%;
-  margin: 0;
+form .btn-group button {
+  margin-bottom: 0.5rem;
   border: none;
 }
+form .btn-group button#submit {
+  order: -1;
+}
+@media (min-width: 768px) {
+  form .btn-group {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  form .btn-group button#submit {
+    order: 0;
+  }
+}
 
-.card-form {
-  width: 70%;
-  margin: auto;
+@media (min-width: 768px) {
+  .card-form {
+    width: 70%;
+    margin: auto;
+  }
 }
 
 .container-form {
-  padding: 2rem;
+  padding: 0.5rem;
+}
+@media (min-width: 768px) {
+  .container-form {
+    padding: 2rem;
+  }
 }
 
 .main {
@@ -969,24 +998,38 @@ a.theme-secondary:hover {
 }
 
 /* == VALIDATION STYLES */
-.error input, .error textarea {
-  border: 2px solid rgb(206, 33, 27) !important;
+.error.form-group label {
+  padding: 12px;
+  border: 2px solid rgb(206, 33, 27);
+  border-bottom: 0;
 }
-.error input:focus, .error textarea:focus {
-  border: 2px solid #edf8ff !important;
-  outline: 4px solid rgb(206, 33, 27) !important;
+.error.form-group input, .error.form-group textarea {
+  border: 2px solid rgb(206, 33, 27);
+  border-top: 0;
 }
-.error span {
+.error.form-group input:focus, .error.form-group textarea:focus {
+  border: 2px solid rgb(206, 33, 27);
+  outline: 0;
+  border-top: 0;
+}
+.error.form-group span {
   color: rgb(206, 33, 27);
 }
 
-.success input, .success textarea {
-  border: 2px solid rgb(40, 168, 40) !important;
+.success.form-group label {
+  padding: 12px;
+  border: 2px solid rgb(40, 168, 40);
+  border-bottom: 0;
 }
-.success input:focus, .success textarea:focus {
-  border: 2px solid #edf8ff !important;
-  outline: 4px solid rgb(40, 168, 40) !important;
+.success.form-group input, .success.form-group textarea {
+  border: 2px solid rgb(40, 168, 40);
+  border-top: 0;
 }
-.success span {
+.success.form-group input:focus, .success.form-group textarea:focus {
+  border: 2px solid rgb(40, 168, 40);
+  outline: 0;
+  border-top: 0;
+}
+.success.form-group span {
   color: rgb(40, 168, 40);
 }/*# sourceMappingURL=frontend.css.map */

@@ -73,6 +73,9 @@ function displayError(inputGroup, message) {
     if(!inputGroup.hasClass('error')){
         inputGroup.addClass('error');
     }
+    if(!inputLabel.hasClass('error')){
+        inputLabel.addClass('error');
+    }
     inputLabel.html(` <span class="icon-cross"></span> ${message}`);
 }
 
@@ -80,6 +83,9 @@ function clearError(inputGroup) {
     const inputLabel = inputGroup.children('label');
     if(inputGroup.hasClass('error')) {
         inputGroup.removeClass('error');
+    }
+    if(inputLabel.hasClass('error')){
+        inputLabel.removeClass('error');
     }
     inputLabel.html('');
 }

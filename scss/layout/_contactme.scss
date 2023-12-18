@@ -5,7 +5,19 @@ form {
         align-items: stretch;
         margin-bottom: calc($base-spacing/2);
         label {
-            margin-bottom: calc($base-spacing/2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            border: 0;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            border-bottom: 0;
+            background-color: lighten($blue-d,10%);
+            font-size: 14px;
+            span {
+                margin-right: 12px;
+            }
         }
         input, textarea {
             padding: calc($base-spacing/3) calc($base-spacing/2);
@@ -20,24 +32,37 @@ form {
     }
     .btn-group {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: $base-spacing;
-        input {
-            width: 50%;
-            margin: 0;
+        flex-direction: column;
+        button {
+            margin-bottom: calc($base-spacing/4);
             border: none;
+            &#submit {
+                order: -1;
+            }
+        }
+        @include mq('md') {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: $base-spacing;
+            button {
+                &#submit {
+                    order: 0;
+                }
+            }
         }
     }
-
-
 }
 
 .card-form {
-    width: 70%;
-    margin: auto;
+    @include mq('md') {
+        width: 70%;
+        margin: auto;
+    }
 }
 
 .container-form {
-    padding: $base-spacing;
+    padding: calc($base-spacing/4);
+    @include mq('md'){
+        padding: $base-spacing;
+    }
 }

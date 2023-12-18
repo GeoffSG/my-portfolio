@@ -1,29 +1,49 @@
 
-    /* == VALIDATION STYLES */
-    $red: rgb(206, 33, 27);
-    $green: rgb(40, 168, 40);
-    .error {
+/* == VALIDATION STYLES */
+$red: rgb(206, 33, 27);
+$green: rgb(40, 168, 40);
+.error {
+    &.form-group {
+        label {
+            padding: 12px;
+            border: 2px solid $red;
+            border-bottom: 0;
+        }
+
         input,textarea {
-            border: 2px solid $red !important;
+            border: 2px solid $red;
+            border-top: 0;
             &:focus {
-                border: 2px solid $white !important;
-                outline: 4px solid $red !important;
+                border: 2px solid $red;
+                outline: 0;
+                border-top: 0;
             }
         }
         span {
             color: $red;
         }
     }
+}
 
-    .success {
+.success {
+    &.form-group {
+        label {
+            padding: 12px;
+            border: 2px solid $green;
+            border-bottom: 0;
+        }
+
         input,textarea {
-            border: 2px solid $green !important;
+            border: 2px solid $green;
+            border-top: 0;
             &:focus {
-                border: 2px solid $white !important;
-                outline: 4px solid $green !important;
+                border: 2px solid $green;
+                outline: 0;
+                border-top: 0;
             }
         }
         span {
             color: $green;
         }
     }
+}
