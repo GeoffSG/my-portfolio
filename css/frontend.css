@@ -787,6 +787,13 @@ form .btn-group button#submit {
 .card h2 small, .card h3 small, .card h4 small {
   color: #CEAA24;
 }
+.card h2 a, .card h3 a, .card h4 a {
+  color: #edf8ff;
+}
+.card h2 a:hover, .card h3 a:hover, .card h4 a:hover {
+  color: #edf8ff;
+  text-decoration: underline;
+}
 .card-box {
   width: calc(100vw - 6rem - 4px);
   max-width: 600px;
