@@ -1,0 +1,29 @@
+.grid {
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+
+    @include mq('md') {
+        &.col-2 {
+            grid-template-columns: repeat(2, auto);
+        }
+
+    }
+    @include mq('md') {
+        &.col-3 {
+            grid-template-columns: repeat(2, auto);
+            @include mq('xl') {
+                grid-template-columns: repeat(3, auto);
+            }
+        }
+    }
+    @include mq('md') {
+        &.col-4 {
+            grid-template-columns: repeat(2, auto);
+            @include mq('xl') {
+                grid-template-columns: repeat(4, auto);
+            }
+        }
+    }
+}
