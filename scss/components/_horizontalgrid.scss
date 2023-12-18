@@ -1,24 +1,19 @@
 .horizontal-grid {
     display: flex;
-    
-    gap: calc($base-spacing*2);
+    gap: $base-spacing;
     padding: calc($base-spacing/2) $base-spacing;
-    margin-bottom: calc($base-spacing/2);
-    border-radius: $base-spacing;
-
     position: relative;
-
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scroll-padding: $base-spacing;
     
     div {
         scroll-snap-align: center;
     }
 
     @include mq('xl') {
+        display: grid;
+        grid-template-columns: auto auto;
         justify-content: center;
-        flex-wrap: wrap;
     }
 }
 

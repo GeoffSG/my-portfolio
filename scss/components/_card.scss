@@ -3,7 +3,6 @@
     border: $border-gold;
     border-radius: $base-spacing;
     box-shadow: $base-box-shadow;
-
     h2, h3, h4 {
         text-align: center;
         small {
@@ -12,13 +11,14 @@
     }
 
     &-box {
-        $w: get-breakpoint('sm');
-        width: calc($w - 8rem);
+        $w: 100vw;
+        width: calc(($w - 6rem) - 4px);
+        max-width: 600px;
         @include mq('md') {
-            width: calc($w - 6rem);
+            width: calc((($w / 2) - 5rem) - 4px);
         }
         @include mq('lg') {
-            width: calc($w - 4rem);
+            width: 300px;
         }
     }
 

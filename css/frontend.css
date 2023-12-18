@@ -788,16 +788,17 @@ form .btn-group button#submit {
   color: #CEAA24;
 }
 .card-box {
-  width: calc(360px - 8rem);
+  width: calc(100vw - 6rem - 4px);
+  max-width: 600px;
 }
 @media (min-width: 768px) {
   .card-box {
-    width: calc(360px - 6rem);
+    width: calc(50vw - 5rem - 4px);
   }
 }
 @media (min-width: 990px) {
   .card-box {
-    width: calc(360px - 4rem);
+    width: 300px;
   }
 }
 .card .card-content {
@@ -806,22 +807,20 @@ form .btn-group button#submit {
 
 .horizontal-grid {
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
   padding: 1rem 2rem;
-  margin-bottom: 1rem;
-  border-radius: 2rem;
   position: relative;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  scroll-padding: 2rem;
 }
 .horizontal-grid div {
   scroll-snap-align: center;
 }
 @media (min-width: 1200px) {
   .horizontal-grid {
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: center;
-    flex-wrap: wrap;
   }
 }
 
@@ -854,6 +853,7 @@ form .btn-group button#submit {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .section {
   padding: 1rem 2rem;
 }
@@ -950,6 +950,38 @@ form .btn-group button#submit {
 }
 .nav-menu .nav-social-media li a span {
   margin: 0;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .grid.col-2 {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (min-width: 768px) {
+  .grid.col-3 {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  .grid.col-3 {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+@media (min-width: 768px) {
+  .grid.col-4 {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  .grid.col-4 {
+    grid-template-columns: repeat(4, auto);
+  }
 }
 
 .theme-primary {
