@@ -1,7 +1,7 @@
 const inputCriteria = {
     "first-name":{
         name: "First Name",
-        min: 3,
+        min: 2,
         max: 25,
         isRequired: true,
         regex: /^[a-zA-Z]+$/
@@ -42,7 +42,7 @@ function checkError(id, inputValue) {
     //  Check if required
     if(currCriteria.isRequired) {
         //      Check if below minimum or above maximum
-        if(inputValue.length < currCriteria.min) {
+        if(inputValue.length <= currCriteria.min) {
             return {
                 hasError: true,
                 errorMessage: `${currCriteria.name} must be more than ${currCriteria.min} characters long!`
