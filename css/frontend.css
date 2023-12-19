@@ -823,11 +823,15 @@ form .btn-group button#submit {
 .horizontal-grid div {
   scroll-snap-align: center;
 }
+@media (min-width: 768px) {
+  .horizontal-grid {
+    justify-content: center;
+  }
+}
 @media (min-width: 1440px) {
   .horizontal-grid {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: center;
   }
 }
 
