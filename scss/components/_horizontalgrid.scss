@@ -10,15 +10,18 @@
         scroll-snap-align: center;
     }
 
-    @include mq('md') {
-        justify-content: center;
-    }
 
     @include mq('xl') {
         display: grid;
         grid-template-columns: auto auto;
-        // justify-content: center;
+        justify-content: center;
         // flex-wrap: wrap;
+    }
+
+    @include mq('md') {
+        &.justify-center-md{
+            justify-content: center;
+        }
     }
 }
 

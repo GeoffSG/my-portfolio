@@ -796,7 +796,7 @@ form .btn-group button#submit {
 }
 .card-box {
   width: calc(100vw - 6rem - 4px);
-  max-width: 600px;
+  max-width: 300px;
 }
 @media (min-width: 768px) {
   .card-box {
@@ -823,15 +823,16 @@ form .btn-group button#submit {
 .horizontal-grid div {
   scroll-snap-align: center;
 }
-@media (min-width: 768px) {
-  .horizontal-grid {
-    justify-content: center;
-  }
-}
 @media (min-width: 1440px) {
   .horizontal-grid {
     display: grid;
     grid-template-columns: auto auto;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .horizontal-grid.justify-center-md {
+    justify-content: center;
   }
 }
 

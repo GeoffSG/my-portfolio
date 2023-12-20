@@ -20,7 +20,7 @@
     &-box {
         $w: 100vw;
         width: calc(($w - 6rem) - 4px);
-        max-width: 600px;
+        max-width: 300px;
         @include mq('md') {
             width: calc((($w / 2) - 5rem) - 4px);
         }
