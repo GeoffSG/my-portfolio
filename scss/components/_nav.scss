@@ -3,8 +3,6 @@ $width-menu: 256px;
 //  Hamburger Menu Button
 .hamburger {
     position: absolute;
-    // left:100%;
-
     margin: 0;
     background-color: $blue-d;
     border: $border-gold;
@@ -30,7 +28,8 @@ $width-menu: 256px;
     @include mq ('lg') {
         display: none;
     }
-    //  Slide menu when active
+
+    //  Move button to the right side of the screen when active
     @include mq ('sm') {
         &.is-active {
             left: $width-menu;
@@ -50,7 +49,6 @@ $width-menu: 256px;
         height: 100vh;
     }
 
-    
     //  Position on top and off screen to the left
     position: absolute;
     left: -100vw;
@@ -84,9 +82,9 @@ $width-menu: 256px;
             width: 128px;
             height: 128px;
             margin: auto;
-        }
-        
+        }   
     }
+    
     /* Main Nav Menu */
     nav{
         overflow-y: auto;
@@ -99,13 +97,6 @@ $width-menu: 256px;
                 a {
                     width: 100%;
                     margin: 0;
-                    
-                    padding: calc($base-spacing/2);
-                    font-size: calc($base-font-size * 0.9);
-                    @include mq('sm') {
-                        padding: calc($base-spacing/2) $base-spacing;
-                        font-size: $base-font-size;
-                    }
                 }
             }
         }
