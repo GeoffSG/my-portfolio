@@ -45,10 +45,18 @@
 .hidden {
   display: none !important;
 }
+.hidden-xs {
+  display: inherit !important;
+}
+@media (min-width: 321px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
 .hidden-sm {
   display: inherit !important;
 }
-@media (min-width: 360px) and (max-width: 768px) {
+@media (min-width: 426px) {
   .hidden-sm {
     display: none !important;
   }
@@ -56,7 +64,7 @@
 .hidden-md {
   display: inherit !important;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .hidden-md {
     display: none !important;
   }
@@ -64,7 +72,7 @@
 .hidden-lg {
   display: inherit !important;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .hidden-lg {
     display: none !important;
   }
@@ -72,7 +80,7 @@
 .hidden-xl {
   display: inherit !important;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .hidden-xl {
     display: none !important;
   }
@@ -80,16 +88,24 @@
 .hidden-xxl {
   display: inherit !important;
 }
-@media (min-width: 1710px) {
+@media (min-width: 1711px) {
   .hidden-xxl {
     display: none !important;
   }
 }
 
+.visible-xs {
+  display: none !important;
+}
+@media (min-width: 321px) {
+  .visible-xs {
+    display: inherit !important;
+  }
+}
 .visible-sm {
   display: none !important;
 }
-@media (min-width: 360px) and (max-width: 768px) {
+@media (min-width: 426px) {
   .visible-sm {
     display: inherit !important;
   }
@@ -97,7 +113,7 @@
 .visible-md {
   display: none !important;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .visible-md {
     display: inherit !important;
   }
@@ -105,7 +121,7 @@
 .visible-lg {
   display: none !important;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .visible-lg {
     display: inherit !important;
   }
@@ -113,7 +129,7 @@
 .visible-xl {
   display: none !important;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .visible-xl {
     display: inherit !important;
   }
@@ -121,7 +137,7 @@
 .visible-xxl {
   display: none !important;
 }
-@media (min-width: 1710px) {
+@media (min-width: 1711px) {
   .visible-xxl {
     display: inherit !important;
   }
@@ -720,7 +736,7 @@ form .btn-group button {
 form .btn-group button#submit {
   order: -1;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   form .btn-group {
     flex-direction: row;
     justify-content: space-between;
@@ -731,7 +747,7 @@ form .btn-group button#submit {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .card-form {
     width: 70%;
     margin: auto;
@@ -741,7 +757,7 @@ form .btn-group button#submit {
 .container-form {
   padding: 0.5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .container-form {
     padding: 2rem;
   }
@@ -798,12 +814,12 @@ form .btn-group button#submit {
   width: calc(100vw - 6rem - 4px);
   max-width: 300px;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .card-box {
     width: calc(50vw - 5rem - 4px);
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .card-box {
     width: 300px;
   }
@@ -823,14 +839,14 @@ form .btn-group button#submit {
 .horizontal-grid div {
   scroll-snap-align: center;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .horizontal-grid {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .horizontal-grid.justify-center-md {
     justify-content: center;
   }
@@ -880,34 +896,46 @@ form .btn-group button#submit {
   margin: 0 auto;
 }
 
+.hamburger {
+  position: absolute;
+  margin: 0;
+  background-color: #0e285d;
+  border: #CEAA24 solid 2px;
+  z-index: 5;
+  left: 0;
+  right: auto;
+  transition: 0.5s;
+}
+.hamburger .hamburger-box .hamburger-inner, .hamburger .hamburger-box .hamburger-inner::after, .hamburger .hamburger-box .hamburger-inner::before {
+  background-color: #edf8ff;
+}
+.hamburger.is-active {
+  right: 0;
+  left: auto;
+}
+@media (min-width: 1025px) {
+  .hamburger {
+    display: none;
+  }
+}
+@media (min-width: 426px) {
+  .hamburger.is-active {
+    left: 256px;
+    right: auto;
+  }
+}
+
 .nav-menu {
   position: absolute;
-  left: -256px;
+  left: -100vw;
   z-index: 1;
   transition: 0.5s;
-  min-width: 256px;
-  width: 256px;
+  width: 100%;
   height: 100vh;
   background-color: #0e285d;
   border-right: #CEAA24 solid 2px;
   /* Main Nav Menu */
   /* Social Media Buttons */
-}
-.nav-menu .hamburger {
-  position: absolute;
-  left: 100%;
-  top: 64px;
-  margin: 0;
-  background-color: #0e285d;
-  border: #CEAA24 solid 2px;
-}
-.nav-menu .hamburger .hamburger-box .hamburger-inner, .nav-menu .hamburger .hamburger-box .hamburger-inner::after, .nav-menu .hamburger .hamburger-box .hamburger-inner::before {
-  background-color: #edf8ff;
-}
-@media (min-width: 1024px) {
-  .nav-menu .hamburger {
-    display: none;
-  }
 }
 .nav-menu.is-active {
   left: 0;
@@ -916,7 +944,14 @@ form .btn-group button#submit {
   overflow: auto;
   height: 100vh;
 }
-@media (min-width: 1024px) {
+@media (min-width: 426px) {
+  .nav-menu {
+    min-width: 256px;
+    width: 256px;
+    left: -256px;
+  }
+}
+@media (min-width: 1025px) {
   .nav-menu {
     position: relative;
     left: 0;
@@ -930,12 +965,6 @@ form .btn-group button#submit {
   width: 128px;
   height: 128px;
   margin: auto;
-}
-@media (min-width: 360px) and (max-width: 768px) {
-  .nav-menu .icon a {
-    width: 64px;
-    height: 64px;
-  }
 }
 .nav-menu nav {
   overflow-y: auto;
@@ -951,6 +980,14 @@ form .btn-group button#submit {
 .nav-menu nav ul li a {
   width: 100%;
   margin: 0;
+  padding: 1rem;
+  font-size: 14.4px;
+}
+@media (min-width: 426px) {
+  .nav-menu nav ul li a {
+    padding: 1rem 2rem;
+    font-size: 16px;
+  }
 }
 .nav-menu .nav-social-media {
   text-align: center;
@@ -985,27 +1022,27 @@ form .btn-group button#submit {
   gap: 2rem;
   padding: 1rem 2rem 2rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .grid.col-2 {
     grid-template-columns: repeat(2, auto);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .grid.col-3 {
     grid-template-columns: repeat(2, auto);
   }
 }
-@media (min-width: 768px) and (min-width: 1440px) {
+@media (min-width: 769px) and (min-width: 1441px) {
   .grid.col-3 {
     grid-template-columns: repeat(3, auto);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .grid.col-4 {
     grid-template-columns: repeat(2, auto);
   }
 }
-@media (min-width: 768px) and (min-width: 1440px) {
+@media (min-width: 769px) and (min-width: 1441px) {
   .grid.col-4 {
     grid-template-columns: repeat(4, auto);
   }

@@ -1,6 +1,7 @@
 //  Breakpoints
 $breakpoints: (
-    'sm': 360px,
+	'xs': 320px,
+    'sm': 425px,
     'md': 768px,
     'lg': 1024px,
     'xl': 1440px,
@@ -13,13 +14,8 @@ $breakpoints: (
 
 @mixin mq($break) {
 
-	@if $break == "sm" {
-		@media (min-width: get-breakpoint($break)) and (max-width: (get-breakpoint('md'))) {
-			@content;
-		}
-    }
-	@else if ($break == "md" or $break == "lg" or $break == "xl" or $break == "xxl")  {
-		@media (min-width: (get-breakpoint($break))) {
+	@if ($break == "xs" or $break == "sm" or $break == "md" or $break == "lg" or $break == "xl" or $break == "xxl")  {
+		@media (min-width: (get-breakpoint($break)+1)) {
 			@content;
 		}
 	}
