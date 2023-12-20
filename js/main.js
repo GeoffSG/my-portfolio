@@ -1,5 +1,5 @@
-$('.nav-menu button').on('click',function(){
-    let navMenu = $(this).parent();
+$('button.hamburger').on('click',function(){
+    let navMenu = $('.nav-menu');
     console.log(navMenu);
     if (navMenu.hasClass('is-active')) {
         navMenu.removeClass('is-active');
