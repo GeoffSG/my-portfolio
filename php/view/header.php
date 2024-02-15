@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="images/png" sizes="32x32" href="./img/icon.png">
-    <title>Geoffrey Grundell | Portfolio</title>
-    <link rel="stylesheet" href="css/hamburger/hamburgers.min.css">
-    <link rel="stylesheet" href="css/frontend.css">
-</head>
-
-<body>
-    <main class="main">
+<header>
+    <section class="cover <?= (getSelf() == "home" || getSelf() == "index") ? "vh-100" : "" ?>">
+        <a href="home">
+            <img src="img/me.png" alt="Photo of Geoffrey Grundell">
+        </a>
+        <h1>
+            <span class="text-effect" id="myName">Geoffrey Grundell</span><br>
+            <small><span class="text-effect" id="myRole">Web Developer</span>
+                <br><span class="text-effect" id="mySkills">HTML CSS &amp; More</span></small>
+        </h1>
+    </section>
+</header>

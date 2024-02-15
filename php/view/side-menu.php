@@ -6,21 +6,21 @@
 <aside class="nav-menu">
     <div class="nav-wrapper">
         <div class="icon">
-            <a href="./index.html">
+            <a href="home">
                 <img src="img/me.png" alt="Photo of Geoffrey Grundell">
             </a>
         </div>
         <nav>
             <ul class="nav-site">
-                <li><a class="btn btn-nav theme-secondary" href="./about-me.html"><span
+                <li><a class="btn btn-nav theme-secondary" href="about-me"><span
                             class="icon-nav icon-profile"></span>
                         About Me</a></li>
-                <li><a class="btn btn-nav theme-secondary" href="./showcase.html"><span
+                <li><a class="btn btn-nav theme-secondary" href="showcase"><span
                             class="icon-nav icon-history"></span>
                         My Work</a></li>
-                <li><a class="btn btn-nav theme-secondary" href="./scs-scheme.html"><span
+                <li><a class="btn btn-nav theme-secondary" href="scs-scheme"><span
                             class="icon-nav icon-graduation-cap"></span> SCS Scheme</a></li>
-                <li><a class="btn btn-nav theme-secondary" href="./contact-me.html"><span
+                <li><a class="btn btn-nav theme-secondary" href="contact-me"><span
                             class="icon-nav icon-envelop"></span> Contact Me</a></li>
             </ul>
             <ul class="nav-social-media">
