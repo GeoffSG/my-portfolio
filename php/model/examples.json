@@ -1,0 +1,20 @@
+{
+    "examples" : [
+        {
+            "title" : "Results Summary Component",
+            "subtitle" : "Frontend Mentor Solution",
+            "description" : "The challenge here was to create a Component that displays results of some kind.<br><br>This challenge was accomplished by the Mobile First approach, just as this portfolio was built on. In this challenge I also used a color map to store and select the colors of the results summary",
+            "preview" : "img/preview-results-summary.webp",
+            "link" : "https://geoffsg.github.io/results-summary-component/",
+            "repo" : "https://github.com/GeoffSG/results-summary-component"
+        },
+        {
+            "title" : "QR Code Component",
+            "subtitle" : "Frontend Mentor Solution",
+            "description" : "This is just a simple container with an image and a description inside it, in the form of a QR Code.<br><br>This simple challenge was my first for Frontend Mentor. I chose to do this mostly to practice the site, also to practice a workflow.",
+            "preview" : "img/preview-qr.webp",
+            "link" : "https://geoffsg.github.io/profile-card-component/",
+            "repo" : "https://github.com/GeoffSG/qr-code-component-main"
+        }
+    ]
+}

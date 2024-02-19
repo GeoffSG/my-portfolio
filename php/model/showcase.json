@@ -1,0 +1,16 @@
+{
+  "showcases": [
+    {
+      "title": "Netmatters Replica",
+      "description": "This is a replica of the Netmatters homepage. It was an assessment as part of the Scion Coalition Scheme with Netmatters. The website was built using PHP, CSS and JavaScript.",
+      "link": "https://geoffrey-grundell.netmatters-scs.co.uk/netmatters-replica/",
+      "repo": "https://github.com/GeoffSG/html-assessment"
+    },
+    {
+      "title": "JS Array & API Practice",
+      "description": "This is a simple website that uses JavaScript to fetch data from an API and display it on the page. It also has a search function that filters the data based on the user's input.",
+      "link": "http://js-array.geoffrey-grundell.netmatters-scs.co.uk/",
+      "repo": "https://github.com/GeoffSG/js-array-assessment"
+    }
+  ]
+}
