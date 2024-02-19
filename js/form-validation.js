@@ -1,14 +1,14 @@
 const inputCriteria = {
-    "first-name":{
+    "first_name":{
         name: "First Name",
         min: 2,
         max: 25,
         isRequired: true,
         regex: /^[a-zA-Z]+$/
     },
-    "last-name":{
+    "last_name":{
         name: "Last Name",
-        min: 3,
+        min: 2,
         max: 25,
         isRequired: true,
         regex: /^[a-zA-Z]+$/
@@ -40,7 +40,7 @@ function checkError(id, inputValue) {
     const currCriteria = inputCriteria[id];
 
     //  Check if required
-    if(currCriteria.isRequired) {
+    if(currCriteria?.isRequired) {
         //      Check if below minimum or above maximum
         if(inputValue.length <= currCriteria.min) {
             return {
@@ -118,7 +118,6 @@ $('.form-input').on('keyup', function(){
 });
 
 $('.form-contact #submit').on('click', function(event){
-    event.preventDefault();
     
     //  For each input, show an error if they're empty
     $('.form-input').each(function() {
@@ -127,6 +126,7 @@ $('.form-contact #submit').on('click', function(event){
             //  Apply styles
             clearSuccess($(this).parent());
             displayError($(this).parent(), validInput.errorMessage);
+            event.preventDefault();
         } else {
             clearError($(this).parent());
             displaySuccess($(this).parent());
