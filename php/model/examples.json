@@ -13,7 +13,7 @@
             "subtitle" : "Frontend Mentor Solution",
             "description" : "This is just a simple container with an image and a description inside it, in the form of a QR Code.<br><br>This simple challenge was my first for Frontend Mentor. I chose to do this mostly to practice the site, also to practice a workflow.",
             "preview" : "img/preview-qr.webp",
-            "link" : "https://geoffsg.github.io/profile-card-component/",
+            "link" : "https://geoffsg.github.io/qr-code-component-main/",
             "repo" : "https://github.com/GeoffSG/qr-code-component-main"
         }
     ]

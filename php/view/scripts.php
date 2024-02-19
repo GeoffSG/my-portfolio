@@ -11,4 +11,3 @@ switch (getSelf()){
         break;
 }
 ?>
-<script async data-id="five-server" src="http://localhost:5500/fiveserver.js"></script>

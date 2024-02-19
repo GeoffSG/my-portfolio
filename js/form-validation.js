@@ -4,28 +4,28 @@ const inputCriteria = {
         min: 2,
         max: 25,
         isRequired: true,
-        regex: /^[a-zA-Z]+$/
+        regex: /^[0-9a-zA-Z\s-_\u00C0-\u02AF]+$/
     },
     "last_name":{
         name: "Last Name",
         min: 2,
         max: 25,
         isRequired: true,
-        regex: /^[a-zA-Z]+$/
+        regex: /^[0-9a-zA-Z\s-_\u00C0-\u02AF]+$/
     },
     "email":{
         name: "Email",
         min: 3,
         max: 50,
         isRequired: true,
-        regex: /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/
+        regex: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
     },
     "subject":{
         name: "Subject",
         min: 3,
         max: 25,
         isRequired: true,
-        regex: /^[0-9a-zA-Z]+$/
+        regex: /^[0-9a-zA-Z\s-_\u00C0-\u02AF]+$/
     },
     "message":{
         name: "Message",

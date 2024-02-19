@@ -2,7 +2,7 @@
     <div class="section">
         <h2>About Me</h2>
         <p>
-            Hi, I'm Geoff. I'm currently training to be a Web Developer under the <a href="scs-scheme.php">Scion
+            Hi, I'm Geoff. I'm currently training to be a Web Developer under the <a href="scs-scheme">Scion
                 Coalition Scheme with Netmatters</a>.
         </p>
         <p>

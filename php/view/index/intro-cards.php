@@ -10,7 +10,7 @@
                         </p>
                         <p>
                         </p>
-                        <a href="about-me.html">Read more about me here</a>
+                        <a href="about-me">Read more about me here</a>
                     </div>
                 </div>
             </div>
@@ -19,14 +19,14 @@
                     <div class="card-content">
                         <h3>I am currently...</h3>
                         <p>
-                            ...training to be a full-stack developer, under the <a href="scs-scheme.html">Scion
+                            ...training to be a full-stack developer, under the <a href="scs-scheme">Scion
                                 Coalition Scheme
                                 with Netmatters</a>.
                         </p>
                         <p>
                             And I'm loving it!
                         </p>
-                        <a href="scs-scheme.html">More about the SCS scheme here</a>
+                        <a href="scs-scheme">More about the SCS scheme here</a>
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                             <li>Moderating &amp; assisting online communities</li>
                             <li>Digital multimedia, content creation</li>
                         </ul>
-                        <a href="about-me.html#experience">Read more of my work experience &amp; qualifications</a>
+                        <a href="about-me">Read more of my work experience &amp; qualifications</a>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                             I even have some challenges from Frontend Mentor that I've completed and currently taking
                             on.
                         </p>
-                        <a href="showcase.html">See my showcase of work</a>
+                        <a href="showcase">See my showcase of work</a>
                     </div>
                 </div>
             </div>

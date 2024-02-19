@@ -43,7 +43,7 @@ require_once __DIR__ . '/../../controller/ShowcaseController.php';
         <p class="section-description">
             Here are some examples of code that I have written and have found interesting to share. Some are just
             snippets I found interesting enough to share, while others are my solutions to a challenge set by <a
-                href="https://www.frontendmentor.io/home">Frontend Mentor</a>.
+                href="https://www.frontendmentor.io">Frontend Mentor</a>.
         </p>
         <div class="box">
             <div class="grid col-3">

@@ -2,7 +2,7 @@
     <div class="cover">
         <div class="attribution">
             Website developed by<br>
-            <a href="index.html">Geoffrey Grundell</a>
+            <a href="/">Geoffrey Grundell</a>
         </div>
     </div>
 </footer>
