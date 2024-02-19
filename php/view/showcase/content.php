@@ -15,17 +15,20 @@ require_once __DIR__ . '/../../controller/ShowcaseController.php';
                         <div class="card-box">
                             <div class="card-heading">
                                 <h2>
-                                    <a href="<?= $showcase->getLink(); ?>" target="_blank">
+                                    <a class="card-link" href="<?= $showcase->getLink(); ?>" target="_blank">
                                         <?= $showcase->getTitle(); ?>
                                     </a>
                                 </h2>
                             </div>
                             <div class="card-content">
-                                <p><?= $showcase->getDescription(); ?></p>
+                                <p>
+                                    <?= $showcase->getDescription(); ?>
+                                </p>
                                 <div class="links">
                                     <ul>
                                         <li><a href="<?= $showcase->getLink(); ?>" target="_blank">View Project</a></li>
-                                        <li><a href="<?= $showcase->getRepo(); ?>" target="_blank">View Repository</a></li>
+                                        <li><a href="<?= $showcase->getRepo(); ?>" target="_blank">View Repository</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -52,7 +55,9 @@ require_once __DIR__ . '/../../controller/ShowcaseController.php';
                                     <a href="<?= $example->getLink(); ?>" target="_blank">
                                         <?= $example->getTitle(); ?><br>
                                     </a>
-                                        <small><?= $example->getSubtitle(); ?></small>
+                                    <small>
+                                        <?= $example->getSubtitle(); ?>
+                                    </small>
                                 </h2>
                             </div>
                             <div class="card-preview">
@@ -61,7 +66,9 @@ require_once __DIR__ . '/../../controller/ShowcaseController.php';
                                         alt="Preview of the <?= $example->getTitle(); ?>"></a>
                             </div>
                             <div class="card-content">
-                                <p><?= $example->getDescription(); ?></p>
+                                <p>
+                                    <?= $example->getDescription(); ?>
+                                </p>
                                 <div class="links">
                                     <ul>
                                         <li><a href="<?= $example->getLink(); ?>" target="_blank">View Project</a></li>

@@ -797,6 +797,9 @@ form .btn-group button#submit {
   border: #CEAA24 solid 2px;
   border-radius: 2rem;
   box-shadow: 0px 0px 1rem #121212;
+  position: relative;
+  top: 0;
+  transition: 0.2s;
 }
 .card h2, .card h3, .card h4 {
   text-align: center;
@@ -827,6 +830,9 @@ form .btn-group button#submit {
 }
 .card .card-content {
   width: 100%;
+}
+.card:hover {
+  top: -8px;
 }
 
 .horizontal-grid {
